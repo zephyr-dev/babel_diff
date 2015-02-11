@@ -78,11 +78,11 @@ module BabelDiff
     end
 
     def previous_version_hash
-      YAML.load(previous_version)
+      YAML.load(previous_version) || {}
     end
 
     def current_version_hash
-      YAML.load(current_version)
+      YAML.load(current_version) || {}
     end
   end
 end
