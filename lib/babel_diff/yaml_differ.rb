@@ -21,9 +21,10 @@ module BabelDiff
         if value.is_a? Hash
           process_difference(value, keys)
         else
-          if previous_version_is_missing_key?(keys)
+          case in_previous_version(keys, value)
+          when :does_not_exist
             add_key_to_additions(keys, value)
-          elsif  previous_version_value_is_different?(keys, value)
+          when :value_different
             add_key_to_updates(keys, value)
           end
         end
@@ -31,23 +32,13 @@ module BabelDiff
       end
     end
 
-    def previous_version_is_missing_key?(keys)
+    def in_previous_version(keys, value)
       current_value = previous_version_hash
       keys.each do |key|
         current_value = current_value[key]
-        return true if current_value.nil?
+        return :does_not_exist if current_value.nil?
       end
-
-      return false
-    end
-
-    def previous_version_value_is_different?(keys, value)
-      current_value = previous_version_hash
-      keys.each do |key|
-        current_value = current_value[key]
-      end
-
-      return current_value != value
+      return :value_different if current_value != value
     end
 
     def add_key_to_updates(keys, value)
