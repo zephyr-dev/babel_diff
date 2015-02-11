@@ -1,9 +1,10 @@
+---
 en:
-  translation_1: "seed1"
-  translation_2: "seed2 This changed"
-  translation_5: "Additional key"
+  translation_1: seed1
+  translation_2: seed2 This changed
+  translation_5: Additional key
   branch:
-    translation_3: "branch.seed3"
-    translation_4: "branch.seed4 changed"
-    translation_6: "Additional nested key"
+    translation_3: branch.seed3
+    translation_4: branch.seed4 changed
+    translation_6: Additional nested key
 

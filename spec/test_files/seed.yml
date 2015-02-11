@@ -1,6 +1,7 @@
+---
 en:
-  translation_1: "seed1"
-  translation_2: "seed2"
+  translation_1: seed1
+  translation_2: seed2
   branch:
-    translation_3: "branch.seed3"
-    translation_4: "branch.seed4"
+    translation_3: branch.seed3
+    translation_4: branch.seed4
