@@ -6,8 +6,8 @@ require 'babel_diff/version'
 Gem::Specification.new do |spec|
   spec.name          = "babel_diff"
   spec.version       = BabelDiff::VERSION
-  spec.authors       = ["Ryan Nash"]
-  spec.email         = ["nash.rn@gmail.com"]
+  spec.authors       = ["Ryan McGarvey", "Noah Gordon"]
+  spec.email         = ["ryan@gust.com", "noah@gust.com", "devs@gust.com"]
 
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
