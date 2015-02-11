@@ -41,11 +41,11 @@ describe BabelDiff do
   def initialize_project_with_some_translations
     `rm config/locales/*`
     `mkdir -p config/locales/`
-    `cp spec/test_files/seed.yml config/locales/phrases.en.yml`
+    `cp spec/test_files/seed.yml config/locales/phrase.en.yml`
   end
 
   def make_some_updates
-    `cp spec/test_files/updated_file.yml config/locales/phrases.en.yml`
+    `cp spec/test_files/updated_file.yml config/locales/phrase.en.yml`
   end
 
   def run_command
@@ -99,6 +99,6 @@ describe BabelDiff do
   end
 
   def yaml_for_config_file(name)
-    YAML.load(File.read("config/locales/phrases.en.#{name}.yml"))
+    YAML.load(File.read("config/locales/phrase.en.#{name}.yml"))
   end
 end

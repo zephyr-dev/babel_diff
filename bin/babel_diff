@@ -1,2 +1,4 @@
 #!/usr/bin/env ruby
 require 'babel_diff'
+
+BabelDiff.run
