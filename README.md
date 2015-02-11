@@ -1,9 +1,5 @@
 # BabelDiff
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/babel_diff`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,18 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+BabelDiff.run
+```
 
-## Development
+Running the above command from the Rails console will create two files, "phrases.en.additions.yml" and "phrases.en.updates.yml", in your locales directory.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment. 
+These files will contain all added and updated translation keys, respectively. If this is your first time running BabelDiff, the additions file will contain all of your translation keys.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+The file "phrases.en.previous_version.yml" will also be created to serve as the benchmark against which future diffs will be compared.
 
-## Contributing
+If you want to run BabelDiff on a different locale file, you can pass it to the "#run" method. The default file path is "config/locales/phrases.en.yml".
 
-1. Fork it ( https://github.com/[my-github-username]/babel_diff/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+The following code:
+
+```ruby
+BabelDiff.run("config/locales/random_folder/phrases.fr.yml")
+```
+
+would produce the following files:
+
+Additions        => config/locales/random_folder/phrases.additions.fr.yml 
+Updates          => config/locales/random_folder/phrases.updates.fr.yml 
+Previous Version => config/locales/random_folder/phrases.previous_version.fr.yml 
