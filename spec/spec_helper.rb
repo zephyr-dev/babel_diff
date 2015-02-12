@@ -12,11 +12,11 @@ def make_some_updates
 end
 
 def run_diff_command
-  BabelDiff.generate_diffs
+  BabelDiff.generate_diffs("config/locales/phrase.en.yml")
 end
 
 def run_import_command
-
+  BabelDiff.import_translations("spec/test_files/import", "config/locales/")
 end
 
 def expect_to_see_everything_in_additions_file

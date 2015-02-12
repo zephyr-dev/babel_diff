@@ -15,8 +15,12 @@ module BabelDiff
     handler.version_files
   end
 
-  def self.import_files(import_directory, current_version_directory = "config/locales/")
-
+  def self.import_translations(import_directory, current_version_directory = "config/locales/")
+    handler = ImportFileHandler.new(import_directory, current_version_directory)
+    handler.each_phrase do |phrase, import|
+      yaml_merger = YamlMerger.new(phrase, import)
+      handler.update_phrase(yaml_merger.updated_phrase)
+    end
   end
 
 end
