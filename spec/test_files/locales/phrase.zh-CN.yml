@@ -1,0 +1,41 @@
+---
+zh-CN:
+  Page:
+    error_500_sub_title_1: "发生意外错误。请尝试刷新页面\x03 或返回。  "
+    error_500_sub_title_2: "如果问题依然存在，请联系支持服务。"
+    error_500_title: "哎呀！出错啦。 "
+  Phrases:
+    error:
+      url_not_valid: "非有效 URL"
+  activemodel:
+    attributes:
+      hubspot_contact:
+        email: "电子邮件"
+      hubspot_service/prospect_investor_contact:
+        email: "电子邮件"
+      internal_deal:
+        add_new_deal_instructions: "完成以下信息即可添加新交易。 "
+        company_name: "公司名称"
+      investor_group_invitation_form:
+        message: "消息"
+        user_name: "名字"
+    errors:
+      models:
+        claim_startup_invitation_response:
+          attributes:
+            base:
+              claim_internal_deal_error: "接受本邀请出错。请联系Gust客户服务。"
+              duplicate_deal: "您目前有递交给该团体的申请。"
+              entrepreneur_has_active_deal_with_group: "创业者与该团体之间存在处于活动状态的交易。"
+              expired: "抱歉，该邀请已失效。"
+              invalid: "这是一份无效或已撤销的邀请。"
+              no_such_email: "您所提供的电子邮件与您的 Gust 账户没有关联。您需要添加并确认新电子邮件地址，方可访问账户。"
+              wrong_user: "该邀请似乎应该发送给另一个收件人。如果发送有误，请联系发件人并请求重新发送至链接到您Gust账户的电子邮件地址。 "
+        deal/claim_startup_invitation_response:
+          attributes:
+            base:
+              entrepreneur_has_active_deal_with_group: "该创业者与该团体之间存在处于活动状态的交易。"
+              expired: "抱歉，该邀请已失效。"
+              invalid: "这是一份无效或已收回的邀请。"
+              no_such_email: "您所提供的电子邮件与您的 Gust 账户没有关联。您需要添加并确认新电子邮件地址，方可访问账户。"
+              wrong_user: "该邀请对象似乎是其他人。如果有误，请联系发件人并请求重新发至与您Gust账户相关的电子邮件地址。 "

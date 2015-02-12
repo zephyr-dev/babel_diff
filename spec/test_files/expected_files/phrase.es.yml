@@ -1,0 +1,57 @@
+---
+es:
+  Page:
+    error_500_sub_title_1: "Intente actualizar
+      la página\x03 o volver atrás.  "
+    error_500_sub_title_2: Si el problema continúa, contacte con el departamento de
+      asistencia técnica.
+    error_500_title: '¡Lo sentimos! Algo ha ido mal. '
+  Phrases:
+    error:
+      url_not_valid: no es una URL válida
+  activemodel:
+    attributes:
+      hubspot_contact:
+        email: Correo electrónico
+      hubspot_service/prospect_investor_contact:
+        email: Correo electrónico
+      internal_deal:
+        add_new_deal_instructions: 'Añada un nuevo proyecto completando la siguiente
+          información. '
+        company_name: Nombre de la compañía
+      investor_group_invitation_form:
+        message: Mensaje
+        user_name: Nombre
+    errors:
+      models:
+        claim_startup_invitation_response:
+          attributes:
+            base:
+              claim_internal_deal_error: Se ha producido un error al aceptar esta
+                invitación. some other text al cliente de Gust.
+              duplicate_deal: Tiene una solicitud existente con esta organización.
+              entrepreneur_has_active_deal_with_group: El emprendedor tiene un proyecto
+                activo con esta organización.
+              expired: Lo sentimos, esta invitación ha caducado.
+              invalid: Esta invitación no es válida o ha sido retirada.
+              no_such_email: El correo electrónico que ha especificado no está asociado
+                con su cuenta de Gust. Añada y confirme su nueva dirección de correo
+                electrónico para acceder a la cuenta.
+              wrong_user: 'Parece que esta invitación se dirigía a otra persona. Si
+                se trata de un error, contacte con el remitente y solicite que se
+                reenvíe a la dirección de correo electrónico asociada a su cuenta
+                de Gust. '
+        deal/claim_startup_invitation_response:
+          attributes:
+            base:
+              entrepreneur_has_active_deal_with_group: El emprendedor tiene un proyecto
+                activo con esta organización.
+              expired: Lo sentimos, esta invitación ha caducado.
+              invalid: Esta invitación no es válida o ha sido retirada.
+              no_such_email: El correo electrónico que ha especificado no está asociado
+                con su cuenta de Gust. Añada y confirme su nueva dirección de correo
+                electrónico para acceder a la cuenta.
+              wrong_user: 'Parece que esta invitación se dirigía a otra persona. Si
+                se trata de un error, contacte con el remitente y solicite que se
+                reenvíe a la dirección de correo electrónico asociada a su cuenta
+                de Gust. '

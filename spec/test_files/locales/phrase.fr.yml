@@ -1,0 +1,58 @@
+---
+fr:
+  Page:
+    error_500_sub_title_1: "Une erreur inattendue s'est produite. Veuillez essayer
+      de rafraîchir la page\x03 ou de revenir à la page précédente.  "
+    error_500_sub_title_2: Si le problème persiste, contactez notre service d'assistance.
+    error_500_title: 'Désolé ! Un problème est survenu. '
+  Phrases:
+    error:
+      url_not_valid: n'est pas une URL valide
+  activemodel:
+    attributes:
+      hubspot_contact:
+        email: E-mail
+      hubspot_service/prospect_investor_contact:
+        email: E-mail
+      internal_deal:
+        add_new_deal_instructions: 'Ajoutez un nouveau projet en complétant les informations
+          suivantes. '
+        company_name: Nom de l'entreprise
+      investor_group_invitation_form:
+        message: Message
+        user_name: Nom
+      task:
+        task_type: Sélectionnez la tâche
+    errors:
+      models:
+        claim_startup_invitation_response:
+          attributes:
+            base:
+              claim_internal_deal_error: Une erreur s'est produite lors de l'acceptation
+                de cette invitation. Veuillez contacter le service clientèle de Gust.
+              duplicate_deal: Vous avez déposé une candidature auprès de ce groupe.
+              entrepreneur_has_active_deal_with_group: L'entrepreneur partage un projet
+                actif avec ce groupe.
+              expired: Désolé, cette invitation a expiré.
+              invalid: Cette invitation est incorrecte ou a été annulée.
+              no_such_email: L'adresse e-mail que vous avez fournie n'est pas associée
+                à votre compte Gust. Veuillez ajouter et confirmer votre nouvelle
+                adresse e-mail pour accéder à votre compte.
+              wrong_user: 'Cette invitation semble être destinée à quelqu''un d''autre.
+                S''il s''agit d''une erreur, veuillez contacter l''expéditeur et lui
+                demander de la renvoyer à l''adresse e-mail associée à votre compte
+                Gust. '
+        deal/claim_startup_invitation_response:
+          attributes:
+            base:
+              entrepreneur_has_active_deal_with_group: L'entrepreneur partage un projet
+                actif avec ce groupe.
+              expired: Désolé, cette invitation a expiré.
+              invalid: Cette invitation est incorrecte ou a été annulée.
+              no_such_email: L'adresse e-mail que vous avez fournie n'est pas associée
+                à votre compte Gust. Veuillez ajouter et confirmer votre nouvelle
+                adresse e-mail pour accéder à votre compte.
+              wrong_user: 'Cette invitation semble être destinée à quelqu''un d''autre.
+                S''il s''agit d''une erreur, veuillez contacter l''expéditeur et lui
+                demander de la renvoyer à l''adresse e-mail associée à votre compte
+                Gust. '

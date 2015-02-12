@@ -40,14 +40,14 @@ describe BabelDiff do
     end
   end
 
-  # describe "importing translations" do
-    # before do
-      # initialize_project_with_multiple_locales
-      # run_import_command
-    # end
+  describe "importing translations" do
+    before do
+      initialize_project_with_some_translations
+      run_import_command
+    end
 
-    # it "merges the a flattened translation files with the appropriate phrase files" do
-      # expect_to_see_updated_phrase_files
-    # end
-  # end
+    it "merges the a flattened translation files with the appropriate phrase files" do
+      expect_to_see_updated_phrase_files
+    end
+  end
 end

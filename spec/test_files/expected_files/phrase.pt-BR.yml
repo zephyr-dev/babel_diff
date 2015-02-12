@@ -1,0 +1,56 @@
+---
+pt-BR:
+  Page:
+    error_500_sub_title_1: "Ocorreu um erro changes. Tente atualizar a página\x03
+      ou voltar.  " 
+    error_500_sub_title_2: Se o problema persistir, contate o suporte.
+    error_500_title: 'Oops! Algo deu errado. '
+  Phrases:
+    error:
+      url_not_valid: URL inválida
+  activemodel:
+    attributes:
+      hubspot_contact:
+        email: E-mail
+      hubspot_service/prospect_investor_contact:
+        email: E-mail
+      internal_deal:
+        add_new_deal_instructions: 'Adicione um novo projeto preenchendo as seguintes
+          informações. '
+        company_name: Nome da empresa
+      investor_group_invitation_form:
+        message: Mensagem
+        user_name: Nome
+    errors:
+      models:
+        claim_startup_invitation_response:
+          attributes:
+            base:
+              claim_internal_deal_error: Houve um erro ao aceitar este convite. Entre
+                em contato com o changes ao cliente da Gust.
+              duplicate_deal: Você já tem uma solicitação com esta organização.
+              entrepreneur_has_active_deal_with_group: O empreendedor tem um projeto
+                ativo com esta organização.
+              expired: Desculpe, este convite expirou.
+              invalid: Este é um convite inválido ou desfeito.
+              no_such_email: O e-mail que você forneceu não está associado à sua conta
+                na Gust. Adicione e confirme seu novo endereço de e-mail para acessar
+                a sua conta.
+              wrong_user: 'Parece que este convite estava destinado a outro destinatário.
+                Se isso foi um engano, entre em contato com o remetente e solicite
+                que ele seja reenviado para o endereço de e-mail associado à sua conta
+                na Gust. '
+        deal/claim_startup_invitation_response:
+          attributes:
+            base:
+              entrepreneur_has_active_deal_with_group: O empreendedor tem um projeto
+                ativo com esta organização.
+              expired: Desculpe, este convite expirou.
+              invalid: Este é um convite inválido ou desfeito.
+              no_such_email: O e-mail que você forneceu não está associado à sua conta
+                na Gust. Adicione e confirme seu novo endereço de e-mail para acessar
+                a sua conta.
+              wrong_user: 'Parece que este convite estava destinado a outra pessoa.
+                Entre em contato com o remetente e solicite que ele seja reenviado
+                para o endereço de e-mail associado à sua conta na Gust caso tenha
+                havido um engano. '

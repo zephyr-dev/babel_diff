@@ -1,0 +1,5 @@
+---
+Page.error_500_sub_title_1: "Произошла непредвиденная ошибка. Пожалуйста, попробуйте
+      обновить страницу\x03 иливернуться вернуться назад.  "
+Page.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: "Не удалось принять приглашение из-за ошибки.
+                Свяжитесь с отделом по работе работе с клиентами Gust."
