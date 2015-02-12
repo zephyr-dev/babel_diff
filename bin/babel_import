@@ -15,13 +15,20 @@ Produces two files containing all updates and all additions to the given phrase 
 
 HELP
 
+
 case ARGV.first
+when nil
+  puts help
+  exit 1
 when "--help"
   puts help
   exit 0
-when nil
-  BabelDiff.generate_diffs
 else
-  BabelDiff.generate_diffs(ARGV[0])
+  if ARGV[1]
+    BabelDiff.import_translations(ARGV[0], ARGV[1])
+  else
+    BabelDiff.import_translations(ARGV[0])
+  end
 end
+
 
