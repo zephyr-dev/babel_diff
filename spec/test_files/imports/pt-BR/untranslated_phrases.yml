@@ -1,5 +1,5 @@
 ---
-Page.error_500_sub_title_1: "Ocorreu um erro changes. Tente atualizar a página\x03
+pt-BR.Page.error_500_sub_title_1: "Ocorreu um erro changes. Tente atualizar a página\x03
       ou voltar.  " 
-Page.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: Houve um erro ao aceitar este convite. Entre
+pt-BR.activemodel.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: Houve um erro ao aceitar este convite. Entre
                 em contato com o changes ao cliente da Gust.

@@ -1,5 +1,5 @@
 ---
-Page.error_500_sub_title_1: "Une erreur other words s'est produite. Veuillez essayer
+fr.Page.error_500_sub_title_1: "Une erreur other words s'est produite. Veuillez essayer
       de rafraîchir la page\x03 ou de revenir à la page précédente.  "
-Page.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: Une erreur s'est produite lors de l'acceptation
+fr.activemodel.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: Une erreur s'est produite lors de l'acceptation
                 de cette invitation. Veuillez other words le service clientèle de Gust.

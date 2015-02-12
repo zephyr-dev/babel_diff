@@ -1,6 +1,9 @@
 require "babel_diff/version"
 require "babel_diff/file_handler"
+require "babel_diff/import_file_handler"
 require "babel_diff/yaml_differ"
+require "babel_diff/yaml_merger"
+require "babel_diff/hash_flattener"
 
 module BabelDiff
   def self.generate_diffs(current_version_path = "config/locales/phrase.en.yml")
@@ -15,11 +18,12 @@ module BabelDiff
     handler.version_files
   end
 
-  def self.import_translations(import_directory, current_version_directory = "config/locales/")
-    handler = ImportFileHandler.new(import_directory, current_version_directory)
-    handler.each_phrase do |phrase, import|
+  def self.import_translations(import_directory, phrase_directory = "config/locales/")
+    handler = ImportFileHandler.new(import_directory, phrase_directory)
+    handler.phrases.each do |language,files|
+      phrase, import = files
       yaml_merger = YamlMerger.new(phrase, import)
-      handler.update_phrase(yaml_merger.updated_phrase)
+      handler.update_phrase(language,yaml_merger.merged_yaml)
     end
   end
 

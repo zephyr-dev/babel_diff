@@ -1,3 +1,3 @@
 ---
-Page.error_500_sub_title_1: "发生意外错误。请尝试。请尝试。请尝试刷新页面\x03 或返回。  "
-Page.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: "接受本邀请出错接受本邀请出错接受本邀请出错。请联系Gust客户服务。"
+zh-CN.Page.error_500_sub_title_1: "发生意外错误。请尝试。请尝试。请尝试刷新页面\x03 或返回。  "
+zh-CN.activemodel.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: "接受本邀请出错接受本邀请出错接受本邀请出错。请联系Gust客户服务。"

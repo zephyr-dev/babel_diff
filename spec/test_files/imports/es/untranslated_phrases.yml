@@ -1,5 +1,5 @@
 ---
-Page.error_500_sub_title_1: "Intente actualizar
+es.Page.error_500_sub_title_1: "Intente actualizar
       la página\x03 o volver atrás.  "
-Page.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: Se ha producido un error al aceptar esta
+es.activemodel.errors.models.claim_startup_invitation_response.attributes.base.claim_internal_deal_error: Se ha producido un error al aceptar esta
                 invitación. some other text al cliente de Gust.

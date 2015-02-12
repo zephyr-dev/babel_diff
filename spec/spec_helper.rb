@@ -16,7 +16,7 @@ def run_diff_command
 end
 
 def run_import_command
-  BabelDiff.import_translations("spec/test_files/import", "config/locales/")
+  BabelDiff.import_translations("spec/test_files/imports", "config/locales/")
 end
 
 def expect_to_see_everything_in_additions_file
@@ -60,7 +60,7 @@ def french_file
   language_file('fr')
 end
 
-def russion_file
+def russian_file
   language_file('ru')
 end
 

@@ -8,7 +8,7 @@ describe BabelDiff::YamlDiffer do
   describe '#updates' do
     let(:expected_updates) { File.read("spec/test_files/expected_files/expected_updates.yml")}
     it "returns a yaml string representing the updated keys" do
-      expect(differ.updates).to eq(expected_updatesjjj)
+      expect(differ.updates).to eq(expected_updates)
     end
   end
 
