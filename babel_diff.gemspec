@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.executables   << "babel_diff" 
+  spec.executables   << "babel_diff" << "babel_import"
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.8"
