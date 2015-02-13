@@ -22,8 +22,13 @@ module BabelDiff
           keys = k.split(".")
           current_hash = unflattened_hash
 
-          keys[0...-1].each { |key| current_hash = current_hash[key] ||= {} }
-
+          keys[0...-1].each do |key|
+            if current_hash[key].is_a? Hash
+              current_hash = current_hash[key]
+            else
+              current_hash = current_hash[key] = {}
+            end
+          end
           current_hash[keys.last] = v
         end
       end

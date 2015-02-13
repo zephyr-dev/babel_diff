@@ -9,7 +9,7 @@ module BabelDiff
       matched_files = {}
 
       phrase_files.each do |phrase|
-        if matched_import = import_files.detect {|i| i.language == phrase.language }
+        if matched_import = import_files.detect {|i| i.language == phrase.language && phrase.language != :uknown }
           matched_files[phrase.language] = [phrase.contents, matched_import.contents]
         end
       end
@@ -26,7 +26,15 @@ module BabelDiff
     class PhraseFile < Struct.new(:path)
 
       def language
-        path.split("/").last.match(/phrase.(.*).yml/)[1]
+        if match = file_name.match(/phrase.(.*).yml/)
+          return match[1]
+        else
+          return :unkown
+        end
+      end
+
+      def file_name
+        path.split("/").last
       end
 
       def contents

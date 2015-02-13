@@ -18,7 +18,7 @@ module BabelDiff
     handler.version_files
   end
 
-  def self.import_translations(import_directory, phrase_directory = "config/locales/")
+  def self.import_translations(import_directory, phrase_directory = "config/locales")
     handler = ImportFileHandler.new(import_directory, phrase_directory)
     handler.phrases.each do |language,files|
       phrase, import = files
