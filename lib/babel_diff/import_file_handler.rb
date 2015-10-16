@@ -1,9 +1,9 @@
 require 'pry'
 module BabelDiff
-  class ImportFileHandler < Struct.new(:import_directory, :phrase_directory)
+  class ImportFileHandler < Struct.new(:import_directory, :phrase_directory, :phrase_type)
 
-    def phrases
-      phrase_files = Dir.glob(phrase_directory + '/*.yml').map {|f| PhraseFile.new(f) }
+    def matched_phrases
+      phrase_files = Dir.glob(phrase_directory + "/#{phrase_type}.*.yml").map {|f| PhraseFile.new(f) }
       import_files = Dir.glob(import_directory + '/*/*.yml').map {|f| ImportFile.new(f) }
 
       matched_files = {}
@@ -18,7 +18,7 @@ module BabelDiff
     end
 
     def update_phrase(language, contents)
-      File.open(phrase_directory + "/phrase.#{language}.yml", "w+") do |file|
+      File.open(phrase_directory + "/#{phrase_type}.#{language}.yml", "w+") do |file|
         file.write(contents)
       end
     end

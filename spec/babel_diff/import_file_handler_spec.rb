@@ -3,9 +3,10 @@ require 'spec_helper'
 describe BabelDiff::ImportFileHandler do
   let(:import_directory) { "spec/test_files/imports" }
   let(:phrase_directory) { "config/locales" }
-  subject(:handler) { BabelDiff::ImportFileHandler.new(import_directory, phrase_directory) }
+  let(:phrase_type) { "phrase" }
+  subject(:handler) { BabelDiff::ImportFileHandler.new(import_directory, phrase_directory, phrase_type) }
 
-  describe "#phrases" do
+  describe "#matched_phrases" do
     before do
       initialize_project_with_some_translations
       `mkdir #{import_directory}/bad-lang`
@@ -36,7 +37,7 @@ describe BabelDiff::ImportFileHandler do
     let(:pt_BR_import) { File.read(import_directory + '/pt-BR/untranslated_phrases.yml') }
 
     it "returns each pair of translation files that exist in both directories" do
-      expect(handler.phrases).to eq(expected_phrases)
+      expect(handler.matched_phrases).to eq(expected_phrases)
     end
   end
 

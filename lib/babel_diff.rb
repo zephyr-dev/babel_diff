@@ -18,12 +18,12 @@ module BabelDiff
     handler.version_files
   end
 
-  def self.import_translations(import_directory, phrase_directory = "config/locales")
-    handler = ImportFileHandler.new(import_directory, phrase_directory)
-    handler.phrases.each do |language,files|
-      phrase, import = files
-      yaml_merger = YamlMerger.new(phrase, import)
-      handler.update_phrase(language,yaml_merger.merged_yaml)
+  def self.import_translations(import_directory, phrase_directory = "config/locales", phrase_type = "phrase")
+    handler = ImportFileHandler.new(import_directory, phrase_directory, phrase_type)
+    handler.matched_phrases.each do |language, file_contents|
+      phrase_file_contents, import_file_contents = file_contents
+      yaml_merger = YamlMerger.new(phrase_file_contents, import_file_contents)
+      handler.update_phrase(language, yaml_merger.merged_yaml)
     end
   end
 
